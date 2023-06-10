@@ -1,0 +1,55 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  input {
+    border-radius: 10px !important;
+  }
+
+  textarea {
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+  }
+
+  body {
+    background-color: rgb(148 163 184);
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .btn-dark-action {
+    @apply bg-black rounded-full px-5 py-3 shadow-md shadow-slate-700 hover:bg-slate-700 hover:shadow-slate-400 hover:scale-110 transition-all duration-300
+  }
+
+  .btn-light-action {
+    @apply bg-slate-200 text-black rounded-full px-5 py-3 shadow-md shadow-slate-700 hover:text-white hover:bg-slate-700 hover:shadow-slate-400 hover:scale-110 transition-all duration-300
+  }
+
+  .btn-sign {
+    @apply bg-white text-xl font-bold rounded-full px-5 py-2 shadow hover:text-gray-300 hover:bg-slate-800 hover:shadow-slate-300 transition-all duration-300
+  }
+
+  .btn-sign-outline {
+    @apply border-[3px] text-white border-white text-xl font-bold rounded-full px-5 py-2 shadow hover:text-black hover:border-slate-800 hover:shadow-slate-700 transition-all duration-300
+  }
+
+  .btn-sign-dark-outline {
+    @apply border-[3px] text-black border-black text-xl font-bold rounded-full px-5 py-2 shadow hover:bg-black hover:text-white hover:border-slate-100 hover:shadow-slate-700 transition-all duration-300
+  }
+
+  .btn-provider {
+    @apply bg-white text-base text-black font-semibold rounded-md py-3 hover:scale-105 hover:bg-slate-100 hover:shadow duration-300
+  }
+
+  .label-set {
+    @apply ml-1 flex items-center gap-2
+  }
+
+  .text-set {
+    @apply inline-block text-xl
+  }
