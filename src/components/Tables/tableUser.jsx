@@ -5,7 +5,7 @@ import { MdEditDocument } from "react-icons/md";
 import Swal from "sweetalert2";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/user", {
+  const res = await fetch("/api/user", {
     next : { revalidate : 60 },
   });
 

@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 import { useState } from "react";
 
 const getData = async () => {
-  const res = await fetch('http://localhost:3000/api/config', { next : {revalidate : 60} })
+  const res = await fetch('/api/config', { next : {revalidate : 60} })
   if (res.status !== 200) {
     console.log("Something Went wrong");
   }
