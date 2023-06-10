@@ -13,10 +13,6 @@ const poppins = Poppins({
   style: ["italic", "normal"],
 });
 
-export const metadata = {
-  title: "Dashboard"
-};
-
 function DashboardLayout({ children }) {
 
   const [showNav, setShowNav] = useState(true);
