@@ -15,13 +15,19 @@ const patientSchema = new Schema(
       min: 0,
       max: 100,
     },
-    sex: {
+    gender: {
       type: String,
       enum: ["L", "P"],
+    },
+    nomorPelapor : {
+      type : Number
     },
     lokasi: {
       type: String,
     },
+    kejadian: {
+      type: String
+    }
   },
   { timestamps: true }
 );

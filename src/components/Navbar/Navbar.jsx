@@ -34,18 +34,18 @@ export default function Navbar() {
         <NavList />
         {/* {session?.user ? ( */}
           {/* <> */}
-            <button className="btn-sign ml-3 md:my-0 my-3">
+            {/* <button className="btn-sign ml-3 md:my-0 my-3">
               <Link href={"/login"}>Sign In</Link>
             </button>
             <div className="ml-3 md:block hidden">
               <ProfileImage />
-            </div>
+            </div> */}
           {/* </> */}
         {/* ) : ( */}
           {/* <> */}
-            <button className="btn-sign ml-3 md:my-0 my-3">
+            {/* <button className="btn-sign ml-3 md:my-0 my-3">
               <Link href={"/"}>Sign Out</Link>
-            </button>
+            </button> */}
           {/* </> */}
         {/* )} */}
       </div>

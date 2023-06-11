@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import Input from "./Input";
 import { useState } from "react";
+import { signIn } from "next-auth/react";
 
 const LoginForm = () => {
   const [formInput, setFormInput] = useState({
@@ -84,7 +85,7 @@ const LoginForm = () => {
 
         {/* login with providers */}
         <div className="flex justify-center">
-        <button className="btn-provider flex items-center justify-center gap-3 px-16">
+        <button onClick={() => signIn("google")} className="btn-provider flex items-center justify-center gap-3 px-16">
           <span className="text-xl">
             <FcGoogle />
           </span>

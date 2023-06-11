@@ -17,10 +17,7 @@ const DataUser = () => {
         <hr width="40%" className="border-black" />
         <div className="leading-normal">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-            officiis voluptate earum ducimus ad doloremque, placeat repudiandae
-            cupiditate, assumenda recusandae quo odit natus, ipsa possimus ullam
-            reiciendis neque? Laboriosam, fuga!
+            Berikut adalah list dari setiap user yang menggunakan webApp ini. Didalam ini terdapat informasi nomor hp dan role dari setiap user. disini juga bisa membuat user baru, menghapus user(khusus admin) dan mengedit data user yang sudah ada
           </p>
         </div>
         <TableUser

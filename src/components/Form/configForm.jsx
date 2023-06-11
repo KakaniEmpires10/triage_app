@@ -8,14 +8,6 @@ import { IoIosSave } from "react-icons/io";
 import Swal from "sweetalert2";
 import { useState } from "react";
 
-const getData = async () => {
-  const res = await fetch('/api/config', { next : {revalidate : 60} })
-  if (res.status !== 200) {
-    console.log("Something Went wrong");
-  }
-  return res.json();
-}
-
 const ConfigForm = async () => {
   const [data, setData] = useState({
     appName : "",
@@ -62,12 +54,8 @@ const ConfigForm = async () => {
       throw new Error(err.message)
     }
   };
-
-  const config = await getData();
-
   return (
     <>
-    {console.log(config[0])}
       <form onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
           <div className="space-y-5 text-md font-semibold">

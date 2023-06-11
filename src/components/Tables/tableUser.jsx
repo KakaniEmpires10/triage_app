@@ -3,22 +3,18 @@ import { BiSearchAlt } from "react-icons/bi";
 import { BsFillTrash3Fill } from "react-icons/bs";
 import { MdEditDocument } from "react-icons/md";
 import Swal from "sweetalert2";
+import useSWR, { mutate } from "swr";
 
-async function getData() {
-  const res = await fetch("/api/user", {
-    next : { revalidate : 60 },
-  });
 
-  if (res.status !== 200) {
-    alert("Something Went Wrong");
-  }
-  return res.json();
-}
+const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 const TableUser = async ({ openModal, openDetail }) => {
   let countRow = 1;
 
-  const data = await getData();
+  const { data, error, isLoading } = useSWR('/api/user', fetcher)
+
+  if (error) return <div>failed to load</div>
+  if (isLoading) return <div>loading...</div>
 
   const handleDelete = async (id) => {
     try {
@@ -26,7 +22,8 @@ const TableUser = async ({ openModal, openDetail }) => {
         method : 'DELETE',
       })
       if (res.status === 200) {
-        Swal.fire('success', 'User is Successfully Deleted', 'success')
+        Swal.fire('success', 'User berhasil dihapus', 'success')
+        mutate()
       }
     } catch (err) {
       console.log(err.message);

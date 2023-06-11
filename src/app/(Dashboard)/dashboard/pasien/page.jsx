@@ -1,4 +1,4 @@
-import DataPasien from "./dataPasien";
+import DataPasien from "@/components/dataPasien";
 
 export const metadata = {
   title: "Daftar Pasien",

@@ -17,6 +17,30 @@ export async function GET(req, res){
 
 export async function POST(req, res){
     await dbConnect();
+
+    const { pasienData } = await req.json()
+
+    const { nama, usia, nomorPelapor, gender, lokasi, kejadian, foto, triase } = pasienData
+
+    const newPasien = await new Patient({
+        name: nama,
+        usia: usia,
+        nomorPelapor: nomorPelapor,
+        gender: gender,
+        lokasi: lokasi,
+        kejadian: kejadian,
+        avatar: foto,
+        triase: triase
+    })
+
+    try {
+        await newPasien.save();
+
+        return new NextResponse('successfully created', { status: 201 })
+    } catch (err) {
+        throw new Error(err.message)
+    }
+
 }
 
 export async function PATCH(req, res){

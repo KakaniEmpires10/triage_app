@@ -14,6 +14,9 @@ export const metadata = {
   title: "Triage App",
   description:
     "A WebApp made with intension and hope to ease triage process for survivor during cathastrope",
+  icons : {
+    icon: '/favicon2.png'
+  }
 };
 
 export default function RootLayout({ children }) {

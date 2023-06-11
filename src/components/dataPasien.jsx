@@ -15,10 +15,8 @@ const DataPasien = () => {
           <hr width="40%" className="border-black" />
           <div className="leading-normal">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-              officiis voluptate earum ducimus ad doloremque, placeat repudiandae
-              cupiditate, assumenda recusandae quo odit natus, ipsa possimus ullam
-              reiciendis neque? Laboriosam, fuga!
+              Dalam menu ini admin dan super admin bisa melihat nama-nama korban beserta triase dari masing-masing korban berdasarkan artikulasi dari sistem. secara default data akan di filter berdasarkan tanggal hari namun admin tetap bisa memfilter berdasarkan tanggal dan kolom search (masih dalam development). <br/>
+              admin juga bisa mengedit data pasien karena bisa dipastikan sebelumnya belum lengkap
             </p>
           </div>
           <TablePasien openModal={() => setShowModal(true)} />

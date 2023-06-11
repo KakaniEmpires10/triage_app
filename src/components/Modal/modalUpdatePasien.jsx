@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from "react";
 import { RxUpdate } from "react-icons/rx";
 

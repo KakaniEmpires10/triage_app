@@ -1,4 +1,4 @@
-import DataUser from "./dataUser";
+import DataUser from "@/components/dataUser";
 
 export const metadata = {
   title: "Pengguna",

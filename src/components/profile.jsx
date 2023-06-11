@@ -8,7 +8,7 @@ export default function Profile() {
           <p className="font-bold text-sm">Nama Disini</p>
           <p>
             <small>
-              <i>Kategori</i>
+              <i>Role</i>
             </small>
           </p>
         </div>
