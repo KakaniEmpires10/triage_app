@@ -6,7 +6,7 @@ export const metadata = {
 
 function page() {
   return (
-    <main className="mx-64 mt-28 mb-10">
+    <main className="mx-5 sm:mx-64 mt-28 mb-10">
       <div className="flex group flex-col items-center">
         <div className="relative bg-white/90 p-3 rounded-t-full translate-y-10 h-16 w-28 -z-[1] group-hover:bg-white group-hover:translate-y-1 group-hover:z-10 transition-all duration-300">
           <Image
@@ -22,7 +22,7 @@ function page() {
             Tentang Kami
           </h2>
           <hr width="40%" className="border border-black my-5 mx-auto" />
-          <p className="leading-loose text-lg pb-5 text-justify">
+          <p className="leading-loose text-base sm:text-lg pb-5 text-justify">
             Teknologi sistem informasi kesehatan merupakan gabungan perangkat
             dan prosedur yang digunakan untuk mengelola siklus informasi kinerja
             sistem kesehatan <br /> Salah satu bentuk inovasi pemanfaatan teknologi

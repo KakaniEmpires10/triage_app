@@ -10,7 +10,7 @@ const Modal = ({ isVisible, onClose, title, children }) => {
   };
 
   return (
-    <div id="wrapper" className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center sm:p-0 p-3" onClick={handleClose}>
+    <div id="wrapper" className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center sm:p-0 p-3 z-[60]" onClick={handleClose}>
 
       <div className="flex flex-col w-[600px]">
 

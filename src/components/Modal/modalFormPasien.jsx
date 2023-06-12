@@ -80,7 +80,7 @@ const ModalFormPasien = ({ onNext }) => {
           placeholder="Bambang... ( jika tau )"
         />
       </div>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
         <div className="col-span-1">
           <label htmlFor="usia">Perkiraan Usia Korban</label>
           <input
@@ -95,7 +95,7 @@ const ModalFormPasien = ({ onNext }) => {
             required
           />
         </div>
-        <div className="col-span-2 mt-6">
+        <div className="col-span-1 sm:col-span-2 mt-6">
           <label htmlFor="tel">Nomor HP Anda</label>
           <input
             className="w-full border-0 border-b-2 border-black focus:border-0 focus:border-b-2 focus:border-slate-600 focus:ring-0 duration-200"
