@@ -1,11 +1,11 @@
 "use client"
 
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
+import { useSelectedLayoutSegments } from "next/navigation";
 
 export default function SideMenu({ href, icon, children }) {
-  let segment = useSelectedLayoutSegment();
-  let active  = href === `/${segment}`;
+  let segment = useSelectedLayoutSegments();
+  let active  = href === `/${segment[0]}${segment[1] ? `/${segment[1]}` : ""}`;
 
   return (
     <>
