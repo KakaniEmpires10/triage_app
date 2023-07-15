@@ -15,8 +15,17 @@ export const metadata = {
   description:
     "A WebApp made with intension and hope to ease triage process for survivor during cathastrope",
   icons : {
-    icon: '/favicon2.png'
-  }
+    icon:[
+      '/meta/favicon.ico'
+    ],
+    apple: [
+      '/meta/apple-touch-icon.png'
+    ],
+    shortcut: [
+      '/meta/apple-touch-icon.png'
+    ],
+  },
+  manifest: '/meta/site.webmanifest'
 };
 
 export default function RootLayout({ children }) {
