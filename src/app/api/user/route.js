@@ -41,22 +41,3 @@ export async function POST(req) {
     return new NextResponse(err.message, {status : 500})
   }
 }
-
-export async function PATCH(req, res) {
-  await dbConnect();
-  try {
-    
-  } catch (err) {
-    throw new Error(err.message)
-  }
-}
-
-export async function DELETE(req, res) {
-  await dbConnect();
-
-  try {
-    
-  } catch (err) {
-    throw new Error(err)
-  }
-}

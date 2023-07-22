@@ -12,10 +12,7 @@ const Page = () => {
       <hr width="40%" className="border-black" />
       <div className="leading-normal">
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-          officiis voluptate earum ducimus ad doloremque, placeat repudiandae
-          cupiditate, assumenda recusandae quo odit natus, ipsa possimus ullam
-          reiciendis neque? Laboriosam, fuga!
+          Kostumisasikan aplikasi disini sesuai dengan keinginanmu, Happy Costumizing 🙏
         </p>
       </div>
       <ConfigForm />

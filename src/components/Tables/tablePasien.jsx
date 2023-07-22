@@ -29,11 +29,15 @@ const TablePasien = async ({ openModal }) => {
     }
   };
 
+  const colors = [
+    "bg-green-600", "bg-yellow-500", "bg-red-600", "bg-slate-600"
+  ]
+
   return (
     <>
       <div>
         <form>
-          <div className="flex items-center">
+          <div className="flex items-center flex-wrap gap-5">
             <div className="flex item-center space-x-2 mr-3">
               <input
                 type="date"
@@ -95,27 +99,27 @@ const TablePasien = async ({ openModal }) => {
 
             return (
               <tr key={item._id} className="odd:bg-white even:bg-slate-300">
-                <td width={"2%"} className="py-3 text-center">
+                <td width={"2%"} className="py-4 text-center">
                   {counter++}
                 </td>
-                <td className="py-3 text-center">{date}</td>
-                <td className="py-3">
+                <td className="py-4 text-center">{date}</td>
+                <td className="py-4 flex justify-center items-center">
                   <div
-                    className={`h-[20px] w-[20px] rounded-lg ${`bg-${item.triase}-500`}`}
-                  >{item.triase}</div>
+                    className={`h-[20px] w-[20px] rounded-xl ${item.triase == 'black' ? 'bg-slate-800' : item.triase == 'yellow' ? 'bg-yellow-500' : `bg-${item.triase}-600`}`}
+                  ></div>
                 </td>
-                <td className="py-3">
+                <td className="py-4">
                   <span className="p-2 bg-yellow-400 rounded-xl">no_img</span>
                 </td>
-                <td width={"20%"} className="py-3">
+                <td width={"20%"} className="py-4">
                   {item.name}
                 </td>
-                <td className="py-3">{item.usia}</td>
-                <td className="py-3">{item.gender}</td>
-                <td className="py-3">{item.lokasi}</td>
-                <td className="py-3">0{item.nomorPelapor}</td>
-                <td className="py-3">{item.kejadian}</td>
-                <td className="py-3 flex gap-2">
+                <td className="py-4">{item.usia}</td>
+                <td className="py-4">{item.gender}</td>
+                <td className="py-4">{item.lokasi}</td>
+                <td className="py-4">0{item.nomorPelapor}</td>
+                <td className="py-4">{item.kejadian}</td>
+                <td className="py-4 flex gap-2">
                   <button
                     onClick={() => openModal()}
                     className="p-1 rounded-full text-white bg-blue-600 hover:bg-blue-300 duration-200"

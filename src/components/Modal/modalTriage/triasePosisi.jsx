@@ -52,7 +52,7 @@ const TriasePosisi = ({ onClose }) => {
 
   const handleUpdateHitam = async (id) => {
     const update = {
-      triase: "hitam",
+      triase: "black",
     };
     try {
       const res = await fetch(`/api/patient/${id}`, {

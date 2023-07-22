@@ -32,7 +32,7 @@ const TableUser = async ({ openModal, openDetail }) => {
 
   return (
     <>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center flex-wrap gap-5">
         <div className="flex items-baseline gap-5">
           <button
             onClick={() => openModal()}
